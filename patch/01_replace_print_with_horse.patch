@@ -1,0 +1,12 @@
+diff --git a/src/Python/bltinmodule.c b/src/Python/bltinmodule.c
+index 0a76b62..c0f2c4e 100644
+--- a/src/Python/bltinmodule.c
++++ b/src/Python/bltinmodule.c
+@@ -3385,6 +3385,7 @@ static PyMethodDef builtin_methods[] = {
+     BUILTIN_ORD_METHODDEF
+     BUILTIN_POW_METHODDEF
+     BUILTIN_PRINT_METHODDEF
++    {"horse", _PyCFunction_CAST(builtin_print), METH_FASTCALL | METH_KEYWORDS, builtin_print__doc__},
+     BUILTIN_REPR_METHODDEF
+     BUILTIN_ROUND_METHODDEF
+     BUILTIN_SETATTR_METHODDEF
